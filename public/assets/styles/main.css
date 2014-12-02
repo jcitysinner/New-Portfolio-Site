@@ -1,0 +1,191 @@
+/* line 8, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+* {
+  box-sizing: border-box; }
+
+/* line 11, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+html {
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* line 16, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff; }
+
+/* line 23, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #0d9cce; }
+
+/* line 28, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+p {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300; }
+
+/* line 34, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+h1, h2, h3 {
+  font-family: 'Nixie One', cursive; }
+
+/* line 38, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.header, .main, .footer {
+  width: 100%;
+  display: block; }
+
+/* line 43, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.header {
+  padding: 10px;
+  border-bottom: 3px solid #0d9cce;
+  background-color: #fff;
+  transition: all 0.5s; }
+
+/* line 50, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.nav {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  /* line 55, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .nav li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style: none; }
+    /* line 61, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+    .nav li a {
+      padding: 5px 25px;
+      color: #333;
+      transition: all 0.2s;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+      font-size: 18px; }
+      /* line 69, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+      .nav li a img {
+        width: 120px; }
+    /* line 72, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+    .nav li a:hover {
+      color: #0d9cce;
+      border-bottom: solid 2px #0d9cce;
+      padding-bottom: 3px; }
+
+/* line 78, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.main {
+  padding: 0 20px; }
+
+/* line 81, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 50px; }
+
+/* line 85, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+h1.heading {
+  text-align: left;
+  width: 85%;
+  margin: 50px auto; }
+
+/* line 90, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+h2 {
+  font-size: 26px; }
+
+/* line 92, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+h2.quote {
+  text-align: center;
+  margin: 30px; }
+
+/* line 96, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+h3 {
+  text-align: center;
+  font-size: 22px; }
+
+/* line 100, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+h3.heading {
+  text-align: left; }
+
+/* line 104, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+section {
+  margin: 50px auto;
+  width: 85%;
+  border: solid 1px #fff;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden; }
+
+/* line 112, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.leftCol {
+  width: 60%;
+  float: left;
+  overflow: hidden; }
+  /* line 117, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .leftCol p {
+    margin-top: 0; }
+  /* line 120, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .leftCol ul {
+    list-style: none;
+    padding: 0; }
+  /* line 123, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .leftCol li {
+    background-image: url(../images/list.svg);
+    background-repeat: no-repeat;
+    background-position: 3px;
+    background-size: 15px 15px;
+    font-size: 18px;
+    padding: 0 0 0 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-top: 10px; }
+  /* line 134, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .leftCol a.resume {
+    display: block;
+    width: 100%;
+    padding: 25px 0;
+    margin-top: 35px;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    transition: all 0.5s; }
+  /* line 146, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .leftCol a.resume:hover {
+    background-color: white;
+    color: #0d9cce; }
+
+/* line 150, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.rightCol {
+  width: 38%;
+  float: right; }
+  /* line 154, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .rightCol img {
+    width: 100%;
+    border-radius: 10px;
+    border: solid #fff 1px; }
+
+/* line 159, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.leftList {
+  width: 48%;
+  display: inline-block;
+  overflow: hidden; }
+
+/* line 164, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.rightList {
+  width: 48%;
+  display: inline-block;
+  overflow: hidden; }
+
+/* line 170, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+.footer {
+  padding: 20px;
+  background-color: #fff;
+  border-top: solid 3px #0d9cce; }
+  /* line 175, /Users/jessesinfield/Desktop/spa-boilerplate/src/assets/styles/index.sass */
+  .footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #0d9cce; }

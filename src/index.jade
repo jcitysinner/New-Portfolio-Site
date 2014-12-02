@@ -1,0 +1,119 @@
+doctype html
+html
+
+  head
+
+  meta(charset="utf-8")
+
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+
+  title Jesse Sinfield, Front End Developer
+
+  meta(name="description", content="Hello World")
+
+  meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
+
+  link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
+
+  link(href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css')
+
+  link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css')
+
+  body
+
+  div.wrapper
+
+    header.header
+
+      ul.nav
+
+        li: a(href="/about") About
+
+        li: a(href="/contact") Contact
+
+        li: a(href="/"): img(src='assets/images/logo.png')
+
+        li: a(href="/about") Portfolio
+
+        li: a(href="/contact") TBD Link
+
+    div.main
+
+    footer.footer
+
+      p Copyright &copy; 2014
+
+  // -----------------------------
+  // Templates
+  // -----------------------------
+
+  script#home(type="text/template").
+    <div class="page home">
+      <h1>"A Front End Developer for an Up Front World"</h1>
+      <section>
+        <h2>Who Am I?</h2>
+        <p>I am a front end developer in Toronto, Ontario with a focus on forward thinking and efficiency. I got my start in Humber’s Web Design and Interactive Media course where I honed my craft and created a few awesome websites along the way. All my life I’ve had a critical eye when it comes to the web and now I’m able to use that and do my best to make the web a better place. My specialities lie in HTML and CSS but I’m also fluent in javaScript and have a strong interest in WordPress.</p>
+      </section>
+      <h3>Recent Works</h3>
+    </div>
+
+  script#about(type="text/template").
+    <div class="page about">
+      <h1 class='heading'>About Me</h1>
+      <section>
+        <h2 class="quote">A Front End Developer for an Up Front World</h2>  
+        <div class="leftCol">
+          <p>I am a front end developer in Toronto, Ontario with a focus on forward thinking and efficiency. I got my start in Humber’s Web Design and Interactive Media course where I honed my craft and created a few awesome websites along the way. All my life I’ve had a critical eye when it comes to the web and now I’m able to use that and do my best to make the web a better place. My specialities lie in HTML and CSS but I’m also fluent in javaScript and have a strong interest in WordPress.</p>
+          <div class='leftList'>
+            <h3 class="heading">Main Skills</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>javascript</li>
+              <li>Jquery/Mobile</li>
+              <li>PHP</li>
+              <li>WordPress</li>
+              <li>After Effects</li>
+            </ul>
+          </div>
+          <div class='rightList'>
+            <h3 class="heading">Secondary Skills</h3>
+            <ul>
+              <li>Illustrator</li>
+              <li>Photoshop</li>
+              <li>Adobe Premiere</li>
+              <li>Final Cut Pro</li>
+              <li>Project Management</li>
+              <li>Quality Assurance</li>
+              <li>Copy Writing</li>
+            </ul>
+          </div>
+          <a class='resume' href="assets/resume.pdf" target="_blank">Download My Digital Resume</a>
+        </div>
+        <div class="rightCol">
+          <img src="assets/images/me.jpg" id='me'>
+        </div>
+      </section>
+    </div>
+
+  script#contact(type="text/template").
+    <div class="page contact"></div>
+
+  // -----------------------------
+  // Libraries
+  // -----------------------------
+
+  script(type="text/javascript", src="http://code.jquery.com/jquery-2.1.1.min.js")
+
+  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js")
+
+  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js")
+
+  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js")
+
+
+  // -----------------------------
+  // Application
+  // -----------------------------
+
+  script(type="text/javascript", src="assets/scripts/main.js")

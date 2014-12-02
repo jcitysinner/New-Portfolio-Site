@@ -1,0 +1,201 @@
+
+// -----------------------------
+// Variables
+// -----------------------------
+
+$color: #0d9cce
+$lightColor: #fff
+$darkColor: #333
+
+// -----------------------------
+// Global Styles
+// -----------------------------
+
+*
+  box-sizing: border-box
+
+html
+  background-image: url(../images/bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover;
+
+body
+  padding: 0
+  margin: 0
+  font-size: 14px
+  font-family: 'Open Sans', sans-serif;
+  color: $lightColor
+
+a
+  text-decoration: none
+  display: inline-block
+  color: $color
+
+p
+  font-size: 18px
+  line-height: 32px
+  font-weight: 300
+
+
+h1, h2, h3
+  font-family: 'Nixie One', cursive;
+
+// -----------------------------
+// App Specific
+// -----------------------------
+
+.header, .main, .footer
+  width: 100%
+  display: block
+
+// -----------------------------
+// Header
+// -----------------------------
+
+.header
+  padding: 10px
+  border-bottom: 3px solid $color;
+  background-color: #fff;
+  transition: all 0.5s
+
+// -----------------------------
+// Navigation
+// -----------------------------
+
+.nav
+  margin: 0
+  padding: 0
+  text-align: center
+
+  li
+    margin: 0
+    padding: 0
+    display: inline-block
+    list-style: none
+
+    a
+      padding: 5px 25px
+      color: $darkColor
+      transition: all 0.2s
+      padding-bottom: 5px;
+      text-transform: uppercase
+      font-size: 18px
+
+      img
+        width: 120px
+
+    a:hover
+      color: $color
+      border-bottom: solid 2px $color
+      padding-bottom: 3px;
+
+// -----------------------------
+// Main
+// -----------------------------
+
+.main
+  padding: 0 20px
+
+h1
+  text-align: center
+  font-size: 30px
+  margin: 50px
+h1.heading
+  text-align: left
+  width: 85%
+  margin: 50px auto
+
+h2
+  font-size: 26px
+h2.quote
+  text-align: center
+  margin: 30px
+
+h3
+  text-align: center
+  font-size: 22px
+
+h3.heading
+  text-align: left
+
+
+section
+  margin: 50px auto
+  width: 85%
+  border: solid 1px $lightColor
+  padding: 10px
+  border-radius: 10px
+  overflow: hidden;
+
+.leftCol
+  width: 60%
+  float: left
+  overflow: hidden;
+
+  p
+    margin-top: 0
+
+  ul
+    list-style: none
+    padding: 0
+  li
+    background-image: url(../images/list.svg)
+    background-repeat: no-repeat;
+    background-position: 3px;
+    background-size: 15px 15px
+    font-size: 18px
+    padding:0 0 0 35px
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300
+    margin-top: 10px
+
+  a.resume
+    display: block
+    width: 100%
+    padding: 25px 0
+    margin-top: 35px
+    border: solid 1px $lightColor
+    border-radius: 10px
+    color: $lightColor
+    text-align: center
+    font-size: 18px
+    font-weight: 300
+    transition: all 0.5s
+  a.resume:hover
+    background-color: white
+    color: $color
+
+.rightCol
+  width: 38%
+  float: right
+
+  img
+    width: 100%
+    border-radius: 10px
+    border: solid $lightColor 1px
+
+.leftList
+  width: 48%
+  display: inline-block
+  overflow: hidden
+
+.rightList
+  width: 48%
+  display: inline-block
+  overflow: hidden
+
+// -----------------------------
+// Footer
+// -----------------------------
+
+.footer
+  padding: 20px
+  background-color: $lightColor
+  border-top: solid 3px $color
+
+  p
+    margin: 0
+    padding: 0
+    font-size: 12px
+    color: $color
+
