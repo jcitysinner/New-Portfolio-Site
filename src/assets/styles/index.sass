@@ -40,6 +40,22 @@ p
 h1, h2, h3
   font-family: 'Nixie One', cursive;
 
+a.button
+    display: block
+    width: 100%
+    padding: 25px 0
+    margin-top: 35px
+    border: solid 1px $lightColor
+    border-radius: 10px
+    color: $lightColor
+    text-align: center
+    font-size: 18px
+    font-weight: 300
+    transition: all 0.5s
+a.button:hover
+  background-color: white
+  color: $color
+
 // -----------------------------
 // App Specific
 // -----------------------------
@@ -121,9 +137,10 @@ h3.heading
 
 section
   margin: 50px auto
-  width: 85%
+  width: 100%
+  max-width: 1170px
   border: solid 1px $lightColor
-  padding: 10px
+  padding: 25px
   border-radius: 10px
   overflow: hidden;
 
@@ -149,22 +166,6 @@ section
     font-weight: 300
     margin-top: 10px
 
-  a.resume
-    display: block
-    width: 100%
-    padding: 25px 0
-    margin-top: 35px
-    border: solid 1px $lightColor
-    border-radius: 10px
-    color: $lightColor
-    text-align: center
-    font-size: 18px
-    font-weight: 300
-    transition: all 0.5s
-  a.resume:hover
-    background-color: white
-    color: $color
-
 .rightCol
   width: 38%
   float: right
@@ -185,11 +186,70 @@ section
   overflow: hidden
 
 // -----------------------------
+// Home Specific
+// -----------------------------
+
+div.portfolioHome
+  text-align: center
+div.portfolioHomeItem
+  width: 20%
+  padding: 0 2% 2%
+  display: inline-block
+
+  a
+    img
+      width: 100%
+      border-radius: 10px
+      transition: all 0.3s
+      border: solid 1px $lightColor
+  a:hover img
+    border-radius: 20%
+    
+
+// -----------------------------
+// Contact Specific
+// -----------------------------
+
+div.page.contact
+  section
+    div.leftCol, div.rightCol
+      width: 48%
+
+    div.rightCol
+
+      div.socialLink
+        border-top: solid 1px $lightColor
+        border-bottom: solid 1px $lightColor
+        padding: 25px 0
+        overflow: hidden
+        a
+          width: 10%
+          float: left
+          height: auto
+          img
+            background-color: $lightColor
+            transition: all 0.3s
+        a:hover img
+          border-radius: 50%
+
+        div.links
+          float: left
+          width: 85%
+          margin-left: 4%
+          p
+            margin: 0
+          a
+            color: $lightColor
+            transition: all 0.3s
+          a:hover
+            color: $color
+
+// -----------------------------
 // Footer
 // -----------------------------
 
 .footer
-  padding: 20px
+  padding: 10px
   background-color: $lightColor
   border-top: solid 3px $color
 

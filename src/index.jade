@@ -27,15 +27,15 @@ html
 
       ul.nav
 
-        li: a(href="/about") About
+        li: a(href="/portfolio") Portfolio
 
-        li: a(href="/contact") Contact
+        li: a(href="/experience") Experience
 
         li: a(href="/"): img(src='assets/images/logo.png')
 
-        li: a(href="/about") Portfolio
+        li: a(href="/about") About
 
-        li: a(href="/contact") TBD Link
+        li: a(href="/contact") Contact
 
     div.main
 
@@ -55,6 +55,14 @@ html
         <p>I am a front end developer in Toronto, Ontario with a focus on forward thinking and efficiency. I got my start in Humber’s Web Design and Interactive Media course where I honed my craft and created a few awesome websites along the way. All my life I’ve had a critical eye when it comes to the web and now I’m able to use that and do my best to make the web a better place. My specialities lie in HTML and CSS but I’m also fluent in javaScript and have a strong interest in WordPress.</p>
       </section>
       <h3>Recent Works</h3>
+      <div class='portfolioHome'>
+        {{#each portfolioItems}}
+          <div class="portfolioHomeItem">
+            <p>{{name}}</p>
+            <a href="{{link}}"><img src="{{image}}"></a>
+          </div>
+        {{/each}}
+      </div>
     </div>
 
   script#about(type="text/template").
@@ -88,7 +96,7 @@ html
               <li>Copy Writing</li>
             </ul>
           </div>
-          <a class='resume' href="assets/resume.pdf" target="_blank">Download My Digital Resume</a>
+          <a class='button' href="assets/resume.pdf" target="_blank">Download My Digital Resume</a>
         </div>
         <div class="rightCol">
           <img src="assets/images/me.jpg" id='me'>
@@ -97,7 +105,41 @@ html
     </div>
 
   script#contact(type="text/template").
-    <div class="page contact"></div>
+    <div class="page contact">
+      <h1 class="heading">Contact</h1>
+      <section>
+        <h2 class='quote'>Let's Chat, I'd Love to Hear From You!</h2>
+        <div class="leftCol">
+          <h3>Contact Me</h3>
+          <p>I’d love to talk websites with you, whether you need a dedicated developer, a whole website design, or even just a consultation just drop me a line!</p>
+          <a href="mailto:jessesinfield@gmail.com" class="button">Email: jessesinfield@gmail.com</a>
+        </div>
+        <div class="rightCol">
+         <h3>Social Media</h3>
+          <div class='socialLink'>
+            <a href="https://twitter.com/jcitysinner"><img src="assets/images/twitter.png"></a>
+            <div class="links">
+              <p>Twitter</p>
+              <a href="https://twitter.com/jcitysinner">www.twitter.com/jcitysinner</a>
+            </div>
+          </div>
+          <div class='socialLink'>
+            <a href="https://www.linkedin.com/pub/jesse-sinfield/90/3a4/213"><img src="assets/images/linkedin.png"></a>
+            <div class="links">
+              <p>LinkedIn</p>
+              <a href="https://www.linkedin.com/pub/jesse-sinfield/90/3a4/213">www.linkedin.com/jessesinfield</a>
+            </div>
+          </div>
+          <div class='socialLink'>
+            <a href="https://github.com/jcitysinner"><img src="assets/images/github.png"></a>
+            <div class="links">
+              <p>Github</p>
+              <a href="https://github.com/jcitysinner">www.github.com/jcitysinner</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
   // -----------------------------
   // Libraries

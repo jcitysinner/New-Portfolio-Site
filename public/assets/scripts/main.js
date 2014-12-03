@@ -6,6 +6,17 @@
 jQuery(function($) {
 
   // -----------------------------
+  // Global Variables
+  // -----------------------------
+
+  var portfolio = [
+    {name: 'Jobcognito', image: '../assets/images/jobcognito.png', link: 'http://jessesinfield.com/job/'},
+    {name: 'Save The Game', image: '../assets/images/savethegame.png', link: 'http://jessesinfield.com/save/'},
+    {name: 'That One Gaming Channel', image: '../assets/images/thatonegamechannel.png', link: 'http://jessesinfield.com/chan/'},
+    {name: 'Not Far From The Tree', image: '../assets/images/notfarfromthetree.png', link: 'http://www.jessesinfield.com/notFarFromTheTree/'},
+  ]
+
+  // -----------------------------
   // Router
   // -----------------------------
 
@@ -77,7 +88,12 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>Home Page</h1>'
+        portfolioItems: [
+          {name: portfolio[0].name, image: portfolio[0].image, link: portfolio[0].link},
+          {name: portfolio[1].name, image: portfolio[1].image, link: portfolio[1].link},
+          {name: portfolio[2].name, image: portfolio[2].image, link: portfolio[2].link},
+          {name: portfolio[3].name, image: portfolio[3].image, link: portfolio[3].link},
+        ]
       });
 
     },
