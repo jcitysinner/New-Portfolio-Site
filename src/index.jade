@@ -147,10 +147,11 @@ html
       <section>
         {{#each portfolioItems}}
           <div class="portfolioItem">
-            <a href="{{link}}"><img src="{{image}}"></a>
+            <a href="{{link}}" target='_blank'><img src="{{image}}"></a>
             <div class='portfolioItemInfo'>
-              <h3 class='portfolioItemTitle'>{{name}}</h3>
+              <a href="{{link}}" target='_blank'><h3 class='portfolioItemTitle'>{{name}}</h3></a>
               <p>{{desc}}</p>
+              <a href="{{link}}" class='button' target='_blank'>View {{name}} Live</a>
             </div>
           </div>
         {{/each}}

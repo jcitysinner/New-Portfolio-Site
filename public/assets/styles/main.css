@@ -239,11 +239,60 @@ div.page.contact section div.rightCol div.socialLink {
       color: #0d9cce; }
 
 /* line 225, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+div.portfolioItem {
+  margin-bottom: 25px; }
+  /* line 227, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  div.portfolioItem a {
+    display: inline-block;
+    width: 25%; }
+    /* line 230, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+    div.portfolioItem a img {
+      width: 100%;
+      border-radius: 10px;
+      transition: all 0.3s;
+      border: solid 1px #fff; }
+  /* line 235, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  div.portfolioItem a:hover img {
+    border-radius: 15%; }
+  /* line 238, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  div.portfolioItem div.portfolioItemInfo {
+    width: 74%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 25px; }
+    /* line 243, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+    div.portfolioItem div.portfolioItemInfo a {
+      display: block;
+      width: 100%;
+      color: #fff;
+      transition: all 0.5s; }
+      /* line 248, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+      div.portfolioItem div.portfolioItemInfo a h3 {
+        border-bottom: solid 1px #fff;
+        padding: 0 0 10px;
+        margin: 25px 15%; }
+    /* line 252, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+    div.portfolioItem div.portfolioItemInfo a:hover {
+      color: #0d9cce;
+      text-shadow: 1px 1px #333; }
+    /* line 256, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+    div.portfolioItem div.portfolioItemInfo a.button {
+      margin-top: 25px;
+      padding: 15px 0; }
+    /* line 259, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+    div.portfolioItem div.portfolioItemInfo a.button:hover {
+      text-shadow: 0px 0px #fff; }
+
+/* line 262, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+div.portfolioItem:last-child {
+  margin-bottom: 0px; }
+
+/* line 266, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 .footer {
   padding: 10px;
   background-color: #fff;
   border-top: solid 3px #0d9cce; }
-  /* line 230, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  /* line 271, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
   .footer p {
     margin: 0;
     padding: 0;

@@ -246,6 +246,50 @@ div.page.contact
             color: $color
 
 // -----------------------------
+// Portfolio Specific
+// -----------------------------
+
+div.portfolioItem
+  margin-bottom: 25px;
+  a
+    display: inline-block
+    width: 25%;
+    img
+      width: 100%
+      border-radius: 10px
+      transition: all 0.3s
+      border: solid 1px #fff
+  a:hover img
+    border-radius: 15%
+
+  div.portfolioItemInfo
+    width: 74%
+    display: inline-block
+    vertical-align: top
+    padding-left: 25px
+    a
+      display: block
+      width: 100%
+      color: $lightColor 
+      transition: all 0.5s
+      h3
+        border-bottom: solid 1px $lightColor;
+        padding: 0 0 10px;
+        margin: 25px 15%;
+    a:hover
+      color: $color
+      text-shadow: 1px 1px $darkColor
+
+    a.button
+      margin-top: 25px
+      padding: 15px 0;
+    a.button:hover
+      text-shadow: 0px 0px $lightColor
+    
+div.portfolioItem:last-child
+  margin-bottom: 0px;
+
+// -----------------------------
 // Footer
 // -----------------------------
 
