@@ -73,10 +73,10 @@ a.button:hover {
     margin: 0;
     padding: 0;
     display: inline-block;
-    list-style: none; }
-    /* line 77, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+    list-style: none;
+    width: 15%; }
+    /* line 78, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
     .nav li a {
-      padding: 5px 25px;
       color: #333;
       transition: all 0.2s;
       padding-bottom: 5px;
