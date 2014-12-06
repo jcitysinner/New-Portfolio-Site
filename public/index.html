@@ -129,7 +129,16 @@
     <div class="page portfolio">
       <h1 class="heading">Portfolio</h1>
       <section>
-       </section>
+        {{#each portfolioItems}}
+          <div class="portfolioItem">
+            <a href="{{link}}"><img src="{{image}}"></a>
+            <div class='portfolioItemInfo'>
+              <h3 class='portfolioItemTitle'>{{name}}</h3>
+              <p>{{desc}}</p>
+            </div>
+          </div>
+        {{/each}}
+      </section>
     </div>
     
   </script>

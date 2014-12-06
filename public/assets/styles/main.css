@@ -104,28 +104,29 @@ h1 {
 /* line 101, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 h1.heading {
   text-align: left;
-  width: 85%;
+  width: 100%;
+  max-width: 1170px;
   margin: 50px auto; }
 
-/* line 106, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 107, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 h2 {
   font-size: 26px; }
 
-/* line 108, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 109, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 h2.quote {
   text-align: center;
   margin: 30px; }
 
-/* line 112, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 113, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 h3 {
   text-align: center;
   font-size: 22px; }
 
-/* line 116, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 117, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 h3.heading {
   text-align: left; }
 
-/* line 120, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 121, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 section {
   margin: 50px auto;
   width: 100%;
@@ -135,19 +136,19 @@ section {
   border-radius: 10px;
   overflow: hidden; }
 
-/* line 129, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 130, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 .leftCol {
   width: 60%;
   float: left;
   overflow: hidden; }
-  /* line 134, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  /* line 135, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
   .leftCol p {
     margin-top: 0; }
-  /* line 137, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  /* line 138, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
   .leftCol ul {
     list-style: none;
     padding: 0; }
-  /* line 140, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  /* line 141, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
   .leftCol li {
     background-image: url(../images/list.svg);
     background-repeat: no-repeat;
@@ -159,90 +160,90 @@ section {
     font-weight: 300;
     margin-top: 10px; }
 
-/* line 151, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 152, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 .rightCol {
   width: 38%;
   float: right; }
-  /* line 155, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  /* line 156, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
   .rightCol img {
     width: 100%;
     border-radius: 10px;
     border: solid #fff 1px; }
 
-/* line 160, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 161, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 .leftList {
   width: 48%;
   display: inline-block;
   overflow: hidden; }
 
-/* line 165, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 166, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 .rightList {
   width: 48%;
   display: inline-block;
   overflow: hidden; }
 
-/* line 171, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 172, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 div.portfolioHome {
   text-align: center; }
 
-/* line 173, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 174, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 div.portfolioHomeItem {
   width: 20%;
   padding: 0 2% 2%;
   display: inline-block; }
-  /* line 179, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  /* line 180, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
   div.portfolioHomeItem a img {
     width: 100%;
     border-radius: 10px;
     transition: all 0.3s;
     border: solid 1px #fff; }
-  /* line 184, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  /* line 185, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
   div.portfolioHomeItem a:hover img {
     border-radius: 20%; }
 
-/* line 191, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 192, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 div.page.contact section div.leftCol, div.page.contact section div.rightCol {
   width: 48%; }
-/* line 196, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 197, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 div.page.contact section div.rightCol div.socialLink {
   border-top: solid 1px #fff;
   border-bottom: solid 1px #fff;
   padding: 25px 0;
   overflow: hidden; }
-  /* line 201, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  /* line 202, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
   div.page.contact section div.rightCol div.socialLink a {
     width: 10%;
     float: left;
     height: auto; }
-    /* line 205, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+    /* line 206, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
     div.page.contact section div.rightCol div.socialLink a img {
       background-color: #fff;
       transition: all 0.3s; }
-  /* line 208, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  /* line 209, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
   div.page.contact section div.rightCol div.socialLink a:hover img {
     border-radius: 50%; }
-  /* line 211, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  /* line 212, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
   div.page.contact section div.rightCol div.socialLink div.links {
     float: left;
     width: 85%;
     margin-left: 4%; }
-    /* line 215, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+    /* line 216, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
     div.page.contact section div.rightCol div.socialLink div.links p {
       margin: 0; }
-    /* line 217, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+    /* line 218, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
     div.page.contact section div.rightCol div.socialLink div.links a {
       color: #fff;
       transition: all 0.3s; }
-    /* line 220, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+    /* line 221, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
     div.page.contact section div.rightCol div.socialLink div.links a:hover {
       color: #0d9cce; }
 
-/* line 224, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 225, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 .footer {
   padding: 10px;
   background-color: #fff;
   border-top: solid 3px #0d9cce; }
-  /* line 229, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  /* line 230, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
   .footer p {
     margin: 0;
     padding: 0;
