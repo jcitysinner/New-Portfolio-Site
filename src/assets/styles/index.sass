@@ -293,8 +293,8 @@ div.portfolioItem:last-child
 // Portfolio Specific
 // -----------------------------
 
-div.workItem
-  border-bottom: solid 1px $lightColor
+div.workItem, div.eduItem
+  margin: 50px 0
   a h3
     color: $lightColor
     transition: all 0.5s
@@ -305,6 +305,14 @@ div.workItem
     border-bottom: solid 1px $color
   p.date
     font-style: italic
+  a.button
+    padding: 15px
+
+div.eduItem:last-child
+  margin-bottom: 25px
+  p:last-child
+    margin-bottom: 0px
+
 
 // -----------------------------
 // Footer

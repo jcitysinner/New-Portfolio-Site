@@ -288,28 +288,38 @@ div.portfolioItem:last-child {
   margin-bottom: 0px; }
 
 /* line 266, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
-div.workItem {
-  border-bottom: solid 1px #fff; }
+div.workItem, div.eduItem {
+  margin: 50px 0; }
   /* line 268, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
-  div.workItem a h3 {
+  div.workItem a h3, div.eduItem a h3 {
     color: #fff;
     transition: all 0.5s;
     margin-bottom: 0;
     border-bottom: solid 1px #333; }
   /* line 273, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
-  div.workItem a:hover h3 {
+  div.workItem a:hover h3, div.eduItem a:hover h3 {
     color: #0d9cce;
     border-bottom: solid 1px #0d9cce; }
   /* line 276, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
-  div.workItem p.date {
+  div.workItem p.date, div.eduItem p.date {
     font-style: italic; }
+  /* line 278, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  div.workItem a.button, div.eduItem a.button {
+    padding: 15px; }
 
-/* line 280, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+/* line 281, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+div.eduItem:last-child {
+  margin-bottom: 25px; }
+  /* line 283, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  div.eduItem:last-child p:last-child {
+    margin-bottom: 0px; }
+
+/* line 288, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
 .footer {
   padding: 10px;
   background-color: #fff;
   border-top: solid 3px #0d9cce; }
-  /* line 285, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
+  /* line 293, /Users/jessesinfield/Desktop/New-Portfolio-Site/src/assets/styles/index.sass */
   .footer p {
     margin: 0;
     padding: 0;
