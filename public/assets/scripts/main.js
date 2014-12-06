@@ -28,7 +28,8 @@ jQuery(function($) {
       '' : 'home',
       'about': 'about',
       'contact': 'contact',
-      'portfolio': 'portfolio'
+      'portfolio': 'portfolio',
+      'experience': 'experience'
     },
 
     // Home Route
@@ -53,6 +54,12 @@ jQuery(function($) {
     portfolio: function() {
       console.log('Navigating to Portfolio Page');
       App.views['portfolio'].render();
+    },
+
+    // Experience Route
+    experience: function() {
+      console.log('Navigating to Experience Page');
+      App.views['experience'].render();
     }
 
   });
@@ -71,7 +78,8 @@ jQuery(function($) {
       home: new HomeView(),
       about: new AboutView(),
       contact: new ContactView(),
-      portfolio: new PortfolioView()
+      portfolio: new PortfolioView(),
+      experience: new ExperienceView()
     };
 
   };
@@ -225,6 +233,40 @@ jQuery(function($) {
           {name: portfolio[2].name, image: portfolio[2].image, link: portfolio[2].link, desc: portfolio[2].desc},
           {name: portfolio[3].name, image: portfolio[3].image, link: portfolio[3].link, desc: portfolio[3].desc},
           {name: portfolio[4].name, image: portfolio[4].image, link: portfolio[4].link, desc: portfolio[4].desc}
+        ]
+      });
+
+    },
+
+  // -----------------------------
+  // Experience View
+  // -----------------------------
+
+  var ExperienceView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#experience',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        work: [
+          {name: 'dominKnow Inc', position: 'QA Tester', date:'Summers of 2013 & 2014', website:'http://www.dominknow.com/', desc:'I worked at dominKnow as a QA Tester, replicating bugs sent in by users and creating easy-to-read guides for the developers on how to replicate these bugs. I also worked with dominKnow\'s Claro system, creating online course content for their clients.'},
+          {name: 'Tomahawk Technologies', position: 'Junior Developer', website:'http://www.tomahawk.ca/', date:'Summers of 2011 & 2012', desc:'I worked at Tomahawk as a Junior Developer, I worked on SEO research for clients and helped populate and edit content on their websites which were built with Tomahawk\'s CMS system.'},
+          {name: 'Em Kwissa, Poet', position: 'Freelance Web Developer', date: 'Summer of 2012', website: 'http://www.thekwissa.com/', desc:'I built Em Kwissa\'s personal wesbite in the summer of 2012. This was my first experience with freelancing, I built the website using basic HTML and CSS. Later I upgraded the website to a wordpress backend so that Em could update it at any time.'}
+        ],
+        education: [
+          {name:'Web Design and Interactive Media', school: 'Humber College', date:'Fall of 2012 to Spring of 2015'. website: 'http://mediastudies.humber.ca/programs/diplomas/advanced/web-design-interactive-media.html', desc:'The Web Design course at Humber College has allowed me to tap into my love for the web. In this course I\'ve learned everything from basic HTML and CSS to JavaScript frameworks and native iOS programming. The course has also helped me grow to appreciate the web design process and has helped me get stronger with design programs like Photoshop and Illustrator.'},
+          {name:'Media Foundations', school:'Humber College', date:'Fall 2011 to Spring 2012', website: 'http://mediastudies.humber.ca/programs/certificates/media-foundation.html', desc: 'I took the 1 year Media Foundations course at Humber college straight out of highschool. In this course I learned the basics of illustration, photography, audio editing, and film making. I also found my passion for Web Development, which led me to take the Web Design course at Humber.'}
         ]
       });
 
