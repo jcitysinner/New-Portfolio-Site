@@ -290,6 +290,23 @@ div.portfolioItem:last-child
   margin-bottom: 0px;
 
 // -----------------------------
+// Portfolio Specific
+// -----------------------------
+
+div.workItem
+  border-bottom: solid 1px $lightColor
+  a h3
+    color: $lightColor
+    transition: all 0.5s
+    margin-bottom: 0
+    border-bottom: solid 1px $darkColor
+  a:hover h3
+    color: $color
+    border-bottom: solid 1px $color
+  p.date
+    font-style: italic
+
+// -----------------------------
 // Footer
 // -----------------------------
 
