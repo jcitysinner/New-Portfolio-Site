@@ -13,6 +13,8 @@ html
 
   meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
 
+  link(rel="stylesheet", href="assets/styles/jquery.sidr.light.css", type="text/css")
+
   link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
 
   link(href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css')
@@ -27,21 +29,37 @@ html
 
       ul.nav
 
-        li: a(href="/portfolio") Portfolio
+        li.navText: a(href="/portfolio") Portfolio
 
-        li: a(href="/experience") Experience
+        li.navText: a(href="/experience") Experience
 
         li: a(href="/"): img(src='assets/images/Logo.png')
 
-        li: a(href="/about") About
+        li.navText: a(href="/about") About
 
-        li: a(href="/contact") Contact
+        li.navText: a(href="/contact") Contact
+
+      a#mobileNav.mobileOnly: img(src='assets/images/menu.svg') 
 
     div.main
 
     footer.footer
 
       p Copyright &copy; 2014
+
+  div#sidr
+
+    ul
+
+      li: a(href="/") Home
+
+      li: a(href="/portfolio") Portfolio
+
+      li: a(href="/experience") Experience
+
+      li: a(href="/about") About
+
+      li: a(href="/contact") Contact
 
   // -----------------------------
   // Templates
@@ -85,7 +103,7 @@ html
             </ul>
           </div>
           <div class='rightList'>
-            <h3 class="heading">Secondary Skills</h3>
+            <h3 class="heading">Other Skills</h3>
             <ul>
               <li>Illustrator</li>
               <li>Photoshop</li>
@@ -147,10 +165,11 @@ html
       <section>
         {{#each portfolioItems}}
           <div class="portfolioItem">
-            <a href="{{link}}" target='_blank'><img src="{{image}}"></a>
+            <a href="{{link}}" target='_blank' class='portfolioImage'><img src="{{image}}"></a>
             <div class='portfolioItemInfo'>
               <a href="{{link}}" target='_blank'><h3 class='portfolioItemTitle'>{{name}}</h3></a>
               <p>{{desc}}</p>
+              <a href="{{link}}" target='_blank' class='portfolioImageMobile'><img src="{{image}}"></a>
               <a href="{{link}}" class='button' target='_blank'>View {{name}} Live</a>
             </div>
           </div>
@@ -194,6 +213,8 @@ html
   script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js")
 
   script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js")
+
+  script(type="text/javascript", src="assets/scripts/jquery.sidr.min.js")
 
 
   // -----------------------------

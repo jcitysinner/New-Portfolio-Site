@@ -43,7 +43,7 @@ h1, h2, h3
 a.button
     display: block
     width: 100%
-    padding: 25px 0
+    padding: 25px
     margin-top: 35px
     border: solid 1px $lightColor
     border-radius: 10px
@@ -52,10 +52,13 @@ a.button
     font-size: 18px
     font-weight: 300
     transition: all 0.5s
+    overflow: hidden
 a.button:hover
   background-color: white
   color: $color
 
+.mobileOnly
+  display: none
 // -----------------------------
 // App Specific
 // -----------------------------
@@ -179,13 +182,15 @@ section
 
 .leftList
   width: 48%
-  display: inline-block
+  float: left
   overflow: hidden
+  margin-bottom: 25px
 
 .rightList
   width: 48%
-  display: inline-block
+  float: right
   overflow: hidden
+  margin-bottom: 25px
 
 // -----------------------------
 // Home Specific
@@ -283,9 +288,11 @@ div.portfolioItem
 
     a.button
       margin-top: 25px
-      padding: 15px 0;
+      padding: 15px;
     a.button:hover
       text-shadow: 0px 0px $lightColor
+    a.portfolioImageMobile
+      display: none
     
 div.portfolioItem:last-child
   margin-bottom: 0px;
@@ -330,3 +337,94 @@ div.eduItem:last-child
     font-size: 12px
     color: $color
 
+
+// -----------------------------
+// Media Queries
+// -----------------------------
+
+@media (max-width: 1000px)
+  div.portfolioHomeItem
+    width:34%
+
+@media (max-width: 850px)
+  .nav
+    li
+      width: 17%
+      a
+        font-size: 14px
+        img
+          width: 100px
+  div.about
+    div.rightCol
+      display: none
+
+    div.leftCol
+      width: 100%
+      li
+  div.page.contact 
+    section div.leftCol, section div.rightCol
+      width: 100%
+      float: none
+      display: block
+
+  div.portfolioItem 
+    a.portfolioImage
+      display: none
+    div.portfolioItemInfo
+      width: 100%
+      padding: 0
+      a.portfolioImageMobile
+        display: block
+        width: 50%
+        margin: auto
+
+
+@media (max-width: 640px)
+  
+  h1, h1.heading
+    margin: 35px 0
+
+  section
+    padding: 15px
+    margin-top: 0pc
+
+  header
+    overflow: hidden
+
+  div.portfolioHomeItem
+      width:45%
+  li.navText
+    display: none
+  ul.nav
+    text-align: left
+    float: left
+  a.mobileOnly
+    float: right
+    cursor: pointer 
+    display: block
+    img
+      height: 52px
+
+  div.about
+    div.leftCol
+      li
+        font-size: 14px
+
+  div.portfolioItem 
+    div.portfolioItemInfo
+      a.portfolioImageMobile
+        width: 100%
+
+@media (max-width: 440px)
+  section
+    padding: 10px
+  div.portfolioHomeItem
+      width:100%
+  div.leftList, div.rightList
+    float: none
+    width: 100%
+  div.about div.leftCol 
+    li
+      font-size: 16px
+    h3
+      text-align: center 

@@ -317,7 +317,6 @@ jQuery(function($) {
     var isLocal = url.match(/^#/)
 
     if(isLocal) { 
-
       e.preventDefault(); 
       App.router.navigate($(this).attr('href'), { trigger: true }); 
       
@@ -335,5 +334,8 @@ jQuery(function($) {
     $('#me').attr('src', '../assets/images/me.jpg')
   })
 
+  $('#mobileNav').sidr({
+    side: 'right'
+  });
 
 });

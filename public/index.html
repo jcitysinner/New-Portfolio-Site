@@ -6,6 +6,7 @@
   <title>Jesse Sinfield, Front End Developer</title>
   <meta name="description" content="Hello World">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+  <link rel="stylesheet" href="assets/styles/jquery.sidr.light.css" type="text/css">
   <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
@@ -13,17 +14,26 @@
   <div class="wrapper">
     <header class="header">
       <ul class="nav">
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/experience">Experience</a></li>
+        <li class="navText"><a href="/portfolio">Portfolio</a></li>
+        <li class="navText"><a href="/experience">Experience</a></li>
         <li><a href="/"><img src="assets/images/Logo.png"></a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
+        <li class="navText"><a href="/about">About</a></li>
+        <li class="navText"><a href="/contact">Contact</a></li>
+      </ul><a id="mobileNav" class="mobileOnly"><img src="assets/images/menu.svg"></a>
     </header>
     <div class="main"></div>
     <footer class="footer">
       <p>Copyright &copy; 2014</p>
     </footer>
+  </div>
+  <div id="sidr">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+      <li><a href="/experience">Experience</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
   </div>
   <!-- ------------------------------->
   <!-- Templates-->
@@ -67,7 +77,7 @@
             </ul>
           </div>
           <div class='rightList'>
-            <h3 class="heading">Secondary Skills</h3>
+            <h3 class="heading">Other Skills</h3>
             <ul>
               <li>Illustrator</li>
               <li>Photoshop</li>
@@ -131,10 +141,11 @@
       <section>
         {{#each portfolioItems}}
           <div class="portfolioItem">
-            <a href="{{link}}" target='_blank'><img src="{{image}}"></a>
+            <a href="{{link}}" target='_blank' class='portfolioImage'><img src="{{image}}"></a>
             <div class='portfolioItemInfo'>
               <a href="{{link}}" target='_blank'><h3 class='portfolioItemTitle'>{{name}}</h3></a>
               <p>{{desc}}</p>
+              <a href="{{link}}" target='_blank' class='portfolioImageMobile'><img src="{{image}}"></a>
               <a href="{{link}}" class='button' target='_blank'>View {{name}} Live</a>
             </div>
           </div>
@@ -176,6 +187,7 @@
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js"></script>
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+  <script type="text/javascript" src="assets/scripts/jquery.sidr.min.js"></script>
   <!-- ------------------------------->
   <!-- Application-->
   <!-- ------------------------------->
