@@ -311,16 +311,10 @@ jQuery(function($) {
   // Navigation Links
   // -----------------------------
 
-  $(document).delegate('a', 'click', function(e) {
+  $(document).delegate('a[href^="/"]', 'click', function(e) {
     
-    var url = $(this).attr('href') || '#';
-    var isLocal = url.match(/^#/)
-
-    if(isLocal) { 
-      e.preventDefault(); 
-      App.router.navigate($(this).attr('href'), { trigger: true }); 
-      
-    }
+    e.preventDefault(); 
+    App.router.navigate($(this).attr('href'), { trigger: true }); 
 
   });
 
