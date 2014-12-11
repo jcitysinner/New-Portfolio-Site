@@ -318,6 +318,11 @@ jQuery(function($) {
 
   });
 
+  
+  $(document).delegate('a.sidrLink', 'click', function(e) {
+    jQuery.sidr('close')
+  });
+
   // -----------------------------
   // App Functionality 
   // -----------------------------
