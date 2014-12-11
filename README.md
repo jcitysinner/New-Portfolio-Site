@@ -1,4 +1,4 @@
-# Single Page Application Boilerplate
+# Jesse Sinfield Portfolio Site
 
 ## Installation
 

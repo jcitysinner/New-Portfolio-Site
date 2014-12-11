@@ -1,9 +1,9 @@
 {
-  "name": "spa-boilerplate",
-  "description": "Single Page Application Boilerplate Project",
+  "name": "Jesse Sinfield Portfolio Website",
+  "description": "A portfolio website built by Jesse Sinfield",
   "version": "0.0.0",
-  "homepage": "http://darcyclarke.me",
-  "author": "Darcy Clarke",
+  "homepage": "http://jessesinfield.com",
+  "author": "Jesse Sinfield",
   "main": "server.js",
   "dependencies": {
     "express": "*"
